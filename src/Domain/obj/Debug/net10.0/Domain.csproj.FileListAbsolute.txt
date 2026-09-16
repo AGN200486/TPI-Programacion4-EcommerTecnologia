@@ -9,3 +9,4 @@ c:\Users\vella\OneDrive\Documents\GitHub\TPI-Programacion4-Barberia\src\Domain\o
 c:\Users\vella\OneDrive\Documents\GitHub\TPI-Programacion4-Barberia\src\Domain\obj\Debug\net10.0\refint\Domain.dll
 c:\Users\vella\OneDrive\Documents\GitHub\TPI-Programacion4-Barberia\src\Domain\obj\Debug\net10.0\Domain.pdb
 c:\Users\vella\OneDrive\Documents\GitHub\TPI-Programacion4-Barberia\src\Domain\obj\Debug\net10.0\ref\Domain.dll
+C:\Users\vella\OneDrive\Documents\GitHub\TPI-Programacion4-Barberia\src\Domain\obj\Debug\net10.0\Domain.sourcelink.json

@@ -1,7 +1,7 @@
 # SISTEMA DE GESTIÓN Y E-COMMERCE DE PRODUCTOS TECNOLÓGICOS
 
 **Grupo:** Agustín Vella, Franco Mecoli  
-**Repo:** [Link](https://github.com/AGN20486/TPI-Programacion4-EcommerTecnologia)
+**Repo:** [Link](https://github.com/AGN200486/TPI-Programacion4-EcommerTecnologia)
 
 ---
 

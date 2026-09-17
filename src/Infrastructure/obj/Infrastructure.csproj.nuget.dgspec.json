@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Infrastructure\\Infrastructure.csproj": {}
+    "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Application\\Application.csproj": {
+    "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\vella\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Application\\obj\\",
+        "outputPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vella\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -27,8 +27,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Domain\\Domain.csproj"
+              "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -343,14 +343,14 @@
         }
       }
     },
-    "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Domain\\Domain.csproj": {
+    "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\vella\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vella\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -678,14 +678,14 @@
         }
       }
     },
-    "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\vella\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vella\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -701,8 +701,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Application\\Application.csproj"
+              "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\Application.csproj"
               }
             }
           }

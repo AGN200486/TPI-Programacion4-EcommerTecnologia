@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XPyuz6sBPjk=",
+  "dgSpecHash": "EQ1MFAIubOg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Web\\Web.csproj",
+  "projectFilePath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Web\\Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vella\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\vella\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
@@ -43,10 +43,10 @@
     {
       "code": "NU1903",
       "level": "Warning",
-      "message": "Package 'Microsoft.OpenApi' 2.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Web\\Web.csproj",
+      "message": "El paquete \"Microsoft.OpenApi\" 2.0.0 tiene una vulnerabilidad de gravedad alta conocida, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Web\\Web.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-Barberia\\src\\Web\\Web.csproj",
+      "filePath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Web\\Web.csproj",
       "libraryId": "Microsoft.OpenApi",
       "targetGraphs": [
         "net10.0"

@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
-// Cadena de conexión a SQLite
+// Cadena de conexion a SQLite
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") 
                        ?? "Data Source=products.db";
 
@@ -18,8 +18,9 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationContext>(options =>
     options.UseSqlite(connectionString));
 
-// Registro del Repositorio (Inyección de dependencias)
+// Registro del Repositorio (Inyeccion de dependencias)
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 
 var app = builder.Build();
 

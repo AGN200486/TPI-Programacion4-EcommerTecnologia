@@ -12,6 +12,6 @@ public class User
 
     public bool Active { get; set; } = true;
 
-    // Constructor sin parámetros necesario para Entity Framework Core
+    // Constructor sin parametros necesario para Entity Framework Core
     public User() { }
 }

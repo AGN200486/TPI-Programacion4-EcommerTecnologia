@@ -21,6 +21,6 @@ public class Product
 
     public int Stock { get; set; }
 
-    // Constructor sin parámetros requerido por Entity Framework Core
+    // Constructor sin parametros requerido por Entity Framework Core
     public Product() { }
 }

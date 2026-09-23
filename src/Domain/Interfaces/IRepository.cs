@@ -7,7 +7,7 @@ public interface IRepository<T> where T : class
     Task<IReadOnlyList<T>> GetAllAsync();
     // Alta
     Task<T> AddAsync(T entity);
-    // Modificación
+    // Modificacion
     Task UpdateAsync(T entity);
     // Baja
     Task DeleteAsync(int id);

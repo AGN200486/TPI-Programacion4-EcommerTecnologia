@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Agustin\\.nuget\\packages\\": {}
+    "C:\\Users\\vella\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Agustin\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\Application.csproj",
+      "projectUniqueName": "c:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "c:\\Users\\Agustin\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\Agustin\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Agustin\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\obj\\",
+      "projectPath": "c:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\vella\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Agustin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\vella\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -52,8 +52,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "c:\\Users\\Agustin\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\Agustin\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj"
+            "c:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj": {
+              "projectPath": "c:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj"
             }
           }
         }
@@ -68,7 +68,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
@@ -90,7 +90,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

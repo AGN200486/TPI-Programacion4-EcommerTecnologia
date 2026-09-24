@@ -3,12 +3,12 @@ namespace Domain.Interfaces;
 public interface IRepository<T> where T : class
 {   
     // Consultas (Get By Id / Get All)
-    Task<T?> GetByIdAsync(int id);
-    Task<IReadOnlyList<T>> GetAllAsync();
+    T? GetById(int id);
+    List<T> List();
     // Alta
-    Task<T> AddAsync(T entity);
+    T Add(T entity);
     // Modificacion
-    Task UpdateAsync(T entity);
+    void Update(T entity);
     // Baja
-    Task DeleteAsync(int id);
+    void Delete(T entity);
 }

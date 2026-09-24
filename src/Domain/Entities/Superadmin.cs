@@ -4,6 +4,6 @@ public class Superadmin : User
 {
     public Superadmin()
     {
-        Role = "Superadmin";
+        
     }
 }

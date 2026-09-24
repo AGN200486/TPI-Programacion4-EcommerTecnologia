@@ -8,19 +8,19 @@
     "net10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\vella\\.nuget\\packages\\": {}
+    "C:\\Users\\Agustin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Agustin\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\vella\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vella\\OneDrive\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\obj\\",
+      "projectPath": "C:\\Users\\Agustin\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\Agustin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Agustin\\Documents\\GitHub\\TPI-Programacion4-EcommerTecnologia\\src\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vella\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Agustin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -45,7 +45,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
@@ -67,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.302/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

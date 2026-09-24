@@ -1,6 +1,52 @@
 @Web_HostAddress = http://localhost:5211
 
-GET {{Web_HostAddress}}/weatherforecast/
+### Crear un producto 1
+POST {{Web_HostAddress}}/Products
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Teclado",
+  "description": "Teclado mecanico RGB",
+  "price": 45000.00,
+  "stock": 15,
+  "category": "Perifericos",
+  "image": "teclado.jpg"
+}
+
+###
+
+### Crear un producto 2
+POST {{Web_HostAddress}}/Products
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Mouse Gamer",
+  "description": "Mouse optico sensor de alta precision",
+  "price": 28500.50,
+  "stock": 10,
+  "category": "Perifericos",
+  "image": "mouse.jpg"
+}
+
+###
+
+### Obtener todos los productos
+GET {{Web_HostAddress}}/Products
+Content-Type: application/json
 Accept: application/json
 
 ###
+
+### Obtener un producto por ID
+GET {{Web_HostAddress}}/Products/1
+Content-Type: application/json
+Accept: application/json
+
+###
+
+### Eliminar un producto por ID
+DELETE {{Web_HostAddress}}/Products/1
+Content-Type: application/json
+Accept: application/json

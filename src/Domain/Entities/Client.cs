@@ -4,6 +4,6 @@ public class Client : User
 {
     public Client()
     {
-        Role = "Client";
+        
     }
 }

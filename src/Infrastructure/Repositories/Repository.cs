@@ -20,51 +20,43 @@ public class Repository<T> : IRepository<T> where T : class // 'where T : class'
         _dbSet = _context.Set<T>();
     }
 
-    // Obtiene una entidad por su clave primaria (Id) de manera asincronica
-    public async Task<T?> GetByIdAsync(int id) // Retorna 'T?' porque la entidad puede no existir en la base de datos (retornando null)
+    // Obtiene una entidad por su clave primaria (Id)
+    public T? GetById(int id)
     {
-        return await _dbSet.FindAsync(id);
+        return _dbSet.Find(id);
     }
 
-    // Obtiene el listado completo de registros de la tabla correspondiente
-    public async Task<IReadOnlyList<T>> GetAllAsync() // Retorna IReadOnlyList<T> para exponer una lista de solo lectura
+    // Obtiene el listado completo de registros de la tabla
+    public List<T> List()
     {
-        return await _dbSet.ToListAsync();
+        return _dbSet.ToList();
     }
 
-    // Agrega una nueva entidad al contexto y persiste los cambios en la base de datos
-    public async Task<T> AddAsync(T entity)
+    // Agrega una nueva entidad y la guarda automaticamente en la base de datos
+    public T Add(T entity)
     {
-        // Registra la nueva entidad en la memoria de Entity Framework
-        await _dbSet.AddAsync(entity);
-        
-        // Impacta los cambios en la base de datos SQLite
-        await _context.SaveChangesAsync();
-        
+        _dbSet.Add(entity);
+        SaveChanges();
         return entity;
     }
 
-    // Actualiza el estado de una entidad existente y guarda los cambios en SQLite
-    public async Task UpdateAsync(T entity)
+    // Actualiza una entidad existente y persiste el cambio de inmediato
+    public void Update(T entity)
     {
-        // Marca las propiedades del objeto como modificadas dentro del ChangeTracker de EF
         _dbSet.Update(entity);
-        
-        // Ejecuta el UPDATE en la base de datos
-        await _context.SaveChangesAsync();
+        SaveChanges();
     }
 
-    // Elimina un registro buscando primero si existe por su identificador
-    public async Task DeleteAsync(int id)
+    // Elimina un registro de la tabla y guarda los cambios
+    public void Delete(T entity)
     {
-        // Buscamos el registro en la base de datos
-        var entity = await GetByIdAsync(id);
-        
-        // Si la entidad existe, la marcamos para eliminacion y guardamos cambios
-        if (entity != null)
-        {
-            _dbSet.Remove(entity);
-            await _context.SaveChangesAsync();
-        }
+        _dbSet.Remove(entity);
+        SaveChanges();
+    }
+
+    // Metodo auxiliar para guardar cambios en la base de datos
+    public int SaveChanges()
+    {
+        return _context.SaveChanges();
     }
 }

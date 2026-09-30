@@ -1,6 +1,5 @@
-using Domain.Interfaces;
 using Application.Models;
-using Domain.Entities;
+using Application.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Web.Controllers;
@@ -9,51 +8,62 @@ namespace Web.Controllers;
 [Route("[controller]")]
 public class CategoriesController : ControllerBase
 {
-    private readonly IRepository<Category> _categoryRepository;
+    private readonly CategoryService _categoryService;
 
-    public CategoriesController(IRepository<Category> categoryRepository)
+    public CategoriesController(CategoryService categoryService)
     {
-        _categoryRepository = categoryRepository;
+        _categoryService = categoryService;
     }
 
     [HttpGet]
     public IActionResult GetAll()
     {
-        var categories = _categoryRepository.List();
-        return Ok(CategoryDto.Create(categories));
+        var categories = _categoryService.GetAll();
+        return Ok(categories);
     }
 
     [HttpGet("{id}")]
     public IActionResult GetById(int id)
     {
-        var category = _categoryRepository.GetById(id);
-        if (category == null)
-            return NotFound();
-
-        return Ok(CategoryDto.Create(category));
+        try
+        {
+            var category = _categoryService.GetById(id);
+            return Ok(category);
+        }
+        catch (KeyNotFoundException ex)
+        {
+            // Captura si el recurso no fue encontrado (HTTP 404)
+            return NotFound(ex.Message);
+        }
     }
 
     [HttpPost]
     public IActionResult Create([FromBody] PostCategoryRequest request)
     {
-        var category = new Category
+        try
         {
-            Name = request.Name
-        };
-
-        _categoryRepository.Add(category);
-
-        return CreatedAtAction(nameof(GetById), new { id = category.Id }, CategoryDto.Create(category));
+            var newCategory = _categoryService.Create(request);
+            return CreatedAtAction(nameof(GetById), new { id = newCategory.Id }, newCategory);
+        }
+        catch (ArgumentException ex)
+        {
+            // Captura errores de validación de argumentos (HTTP 400)
+            return BadRequest(ex.Message);
+        }
     }
 
     [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
-        var category = _categoryRepository.GetById(id);
-        if (category == null)
-            return NotFound();
-
-        _categoryRepository.Delete(category);
-        return NoContent();
+        try
+        {
+            _categoryService.Delete(id);
+            return NoContent(); // HTTP 204
+        }
+        catch (KeyNotFoundException ex)
+        {
+            // Captura si se intentó eliminar un registro que no existe (HTTP 404)
+            return NotFound(ex.Message);
+        }
     }
 }

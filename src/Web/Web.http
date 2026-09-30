@@ -1,24 +1,38 @@
 @Web_HostAddress = http://localhost:5211
 
-### 1. Crear una categoría (para tener un CategoryId válido)
+### 1. Crear una Categoría
 POST {{Web_HostAddress}}/Categories
 Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "Periféricos"
+  "name": "Computadoras"
 }
 
 ###
 
-### 2. Obtener todas las categorías
+### 2. Obtener todas las Categorías
 GET {{Web_HostAddress}}/Categories
 Content-Type: application/json
 Accept: application/json
 
 ###
 
-### 3. Crear Producto 1 (Teclado)
+### 3. Obtener una Categoría por ID
+GET {{Web_HostAddress}}/Categories/1
+Content-Type: application/json
+Accept: application/json
+
+###
+
+### 4. Eliminar una Categoría por ID
+DELETE {{Web_HostAddress}}/Categories/1
+Content-Type: application/json
+Accept: application/json
+
+###
+
+### 5. Crear Producto 1 (Teclado)
 POST {{Web_HostAddress}}/Products
 Content-Type: application/json
 Accept: application/json
@@ -34,7 +48,7 @@ Accept: application/json
 
 ###
 
-### 4. Crear Producto 2 (Mouse Gamer)
+### 6. Crear Producto 2 (Mouse Gamer)
 POST {{Web_HostAddress}}/Products
 Content-Type: application/json
 Accept: application/json
@@ -50,21 +64,21 @@ Accept: application/json
 
 ###
 
-### 5. Obtener todos los productos
+### 7. Obtener todos los Productos
 GET {{Web_HostAddress}}/Products
 Content-Type: application/json
 Accept: application/json
 
 ###
 
-### 6. Obtener un producto por ID
+### 8. Obtener un Producto por ID
 GET {{Web_HostAddress}}/Products/1
 Content-Type: application/json
 Accept: application/json
 
 ###
 
-### 7. Eliminar un producto por ID
+### 9. Eliminar un Producto por ID
 DELETE {{Web_HostAddress}}/Products/1
 Content-Type: application/json
 Accept: application/json

@@ -1,3 +1,4 @@
+using Application.Services;
 using Domain.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
@@ -25,6 +26,9 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 // Repositorio genérico 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+// Registro de Servicios (Application)
+builder.Services.AddScoped<CategoryService>();
 
 var app = builder.Build();
 

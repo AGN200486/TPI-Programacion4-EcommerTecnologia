@@ -7,9 +7,9 @@ public record ProductDto(
     int Id,
     string Name,
     string Description,
-    decimal Price,
+    double Price,
     int Stock,
-    string Category,
+    int CategoryId,
     string Image,
     bool Active
 )
@@ -23,7 +23,7 @@ public record ProductDto(
             entity.Description,
             entity.Price,
             entity.Stock,
-            entity.Category,
+            entity.CategoryId,
             entity.Image,
             entity.Active
         );

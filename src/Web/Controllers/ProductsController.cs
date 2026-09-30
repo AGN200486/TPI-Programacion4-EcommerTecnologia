@@ -26,9 +26,9 @@ public class ProductsController : ControllerBase
         {
             Name = prPostProductRequest.Name,
             Description = prPostProductRequest.Description,
-            Price = prPostProductRequest.Price,
+            Price = (double)prPostProductRequest.Price,
             Stock = prPostProductRequest.Stock,
-            Category = prPostProductRequest.Category,
+            CategoryId = prPostProductRequest.CategoryId,
             Image = prPostProductRequest.Image,
             Active = true
         };

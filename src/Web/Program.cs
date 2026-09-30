@@ -12,7 +12,7 @@ builder.Services.AddOpenApi();
 
 // Cadena de conexion a SQLite
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") 
-                       ?? "Data Source=products.db";
+                        ?? "Data Source=products.db";
 
 // Registro del DbContext (Infrastructure)
 builder.Services.AddDbContext<ApplicationContext>(options =>
@@ -21,6 +21,10 @@ builder.Services.AddDbContext<ApplicationContext>(options =>
 // Registro del Repositorio (Inyeccion de dependencias)
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+// Repositorio genérico 
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 var app = builder.Build();
 

@@ -4,17 +4,12 @@ namespace Domain.Entities;
 
 public class Order
 {
-    [Key]
     public int Id { get; set; }
-
-    public decimal Total { get; set; }
-
-    // Relacion con Client (1 Client -> muchas Orders)
     public int ClientId { get; set; }
-    public Client Client { get; set; } = null!;
+    public double Total { get; set; }
 
-    // Relacion con Products (1 Order -> muchos Products)
-    public ICollection<Product> Products { get; set; } = new List<Product>();
+    // Propiedad de navegación
+    public ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>(); // lista que guarda todos los orderDetail de esa Orden
 
     // Constructor sin parametros requerido por Entity Framework Core
     public Order() { }

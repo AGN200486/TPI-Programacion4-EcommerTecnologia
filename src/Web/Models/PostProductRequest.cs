@@ -6,6 +6,6 @@ public record PostProductRequest(
     string Description,
     decimal Price,
     int Stock,
-    string Category,
+    int CategoryId,
     string Image
 );

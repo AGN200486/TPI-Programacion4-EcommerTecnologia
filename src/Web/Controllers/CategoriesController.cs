@@ -15,6 +15,7 @@ public class CategoriesController : ControllerBase
         _categoryService = categoryService;
     }
 
+    // Obtiene el listado completo de categorías
     [HttpGet]
     public IActionResult GetAll()
     {
@@ -22,48 +23,27 @@ public class CategoriesController : ControllerBase
         return Ok(categories);
     }
 
+    // Busca una categoría por su ID. Si no existe, el middleware captura la excepción KeyNotFoundException y devuelve 404
     [HttpGet("{id}")]
     public IActionResult GetById(int id)
     {
-        try
-        {
-            var category = _categoryService.GetById(id);
-            return Ok(category);
-        }
-        catch (KeyNotFoundException ex)
-        {
-            // Captura si el recurso no fue encontrado (HTTP 404)
-            return NotFound(ex.Message);
-        }
+        var category = _categoryService.GetById(id);
+        return Ok(category);
     }
 
+    // Crea una nueva categoría. Si los datos fallan la validación, el middleware captura ArgumentException y devuelve 400
     [HttpPost]
     public IActionResult Create([FromBody] PostCategoryRequest request)
     {
-        try
-        {
-            var newCategory = _categoryService.Create(request);
-            return CreatedAtAction(nameof(GetById), new { id = newCategory.Id }, newCategory);
-        }
-        catch (ArgumentException ex)
-        {
-            // Captura errores de validación de argumentos (HTTP 400)
-            return BadRequest(ex.Message);
-        }
+        var newCategory = _categoryService.Create(request);
+        return CreatedAtAction(nameof(GetById), new { id = newCategory.Id }, newCategory);
     }
 
+    // Elimina una categoría por su ID. Si no existe, el middleware la ataja y responde 404
     [HttpDelete("{id}")]
     public IActionResult Delete(int id)
     {
-        try
-        {
-            _categoryService.Delete(id);
-            return NoContent(); // HTTP 204
-        }
-        catch (KeyNotFoundException ex)
-        {
-            // Captura si se intentó eliminar un registro que no existe (HTTP 404)
-            return NotFound(ex.Message);
-        }
+        _categoryService.Delete(id);
+        return NoContent();
     }
 }

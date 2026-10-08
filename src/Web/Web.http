@@ -6,7 +6,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "Computadoras"
+  "name": ""
 }
 
 ###
@@ -19,14 +19,14 @@ Accept: application/json
 ###
 
 ### 3. Obtener una Categoría por ID
-GET {{Web_HostAddress}}/Categories/1
+GET {{Web_HostAddress}}/Categories/4
 Content-Type: application/json
 Accept: application/json
 
 ###
 
 ### 4. Eliminar una Categoría por ID
-DELETE {{Web_HostAddress}}/Categories/1
+DELETE {{Web_HostAddress}}/Categories/4
 Content-Type: application/json
 Accept: application/json
 

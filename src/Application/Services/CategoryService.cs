@@ -28,7 +28,7 @@ public class CategoryService
         // Si no existe, lanzamos KeyNotFoundException
         if (category == null)
         {
-            throw new KeyNotFoundException($"No se encontró la categoría con ID {id}.");
+            throw new KeyNotFoundException($"No se encontro la categoria con ID {id}.");
         }
 
         return CategoryDto.Create(category);
@@ -40,7 +40,7 @@ public class CategoryService
         // Validación de regla de negocio
         if (string.IsNullOrWhiteSpace(request.Name))
         {
-            throw new ArgumentException("El nombre de la categoría no puede estar vacío.", nameof(request.Name));
+            throw new ArgumentException("El nombre de la categoria no puede estar vacio.");
         }
 
         var category = new Category
@@ -61,7 +61,7 @@ public class CategoryService
         // si no existe Id
         if (category == null)
         {
-            throw new KeyNotFoundException($"No se puede eliminar. No existe la categoría con ID {id}.");
+            throw new KeyNotFoundException($"No se puede eliminar. No existe la categoria con ID {id}.");
         }
 
         _categoryRepository.Delete(category);

@@ -3,6 +3,7 @@ using Domain.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Web.Middlewares; // Namespace del middleware global de excepciones
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,7 +31,13 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 // Registro de Servicios (Application)
 builder.Services.AddScoped<CategoryService>();
 
+// Registro del middleware para el manejo de excepciones
+builder.Services.AddTransient<GlobalExceptionHandlingMiddleware>();
+
 var app = builder.Build();
+
+// Intercepta cualquier error globalmente antes de procesar las peticiones
+app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

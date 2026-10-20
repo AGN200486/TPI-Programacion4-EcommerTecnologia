@@ -1,6 +1,84 @@
 @Web_HostAddress = http://localhost:5211
 
-GET {{Web_HostAddress}}/weatherforecast/
+### 1. Crear una Categoría
+POST {{Web_HostAddress}}/Categories
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": ""
+}
+
+###
+
+### 2. Obtener todas las Categorías
+GET {{Web_HostAddress}}/Categories
+Content-Type: application/json
 Accept: application/json
 
 ###
+
+### 3. Obtener una Categoría por ID
+GET {{Web_HostAddress}}/Categories/4
+Content-Type: application/json
+Accept: application/json
+
+###
+
+### 4. Eliminar una Categoría por ID
+DELETE {{Web_HostAddress}}/Categories/4
+Content-Type: application/json
+Accept: application/json
+
+###
+
+### 5. Crear Producto 1 (Teclado)
+POST {{Web_HostAddress}}/Products
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Teclado",
+  "description": "Teclado mecánico RGB",
+  "price": 45000.00,
+  "stock": 15,
+  "categoryId": 1,
+  "image": "teclado.jpg"
+}
+
+###
+
+### 6. Crear Producto 2 (Mouse Gamer)
+POST {{Web_HostAddress}}/Products
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Mouse Gamer",
+  "description": "Mouse óptico sensor de alta precisión",
+  "price": 28500.50,
+  "stock": 10,
+  "categoryId": 1,
+  "image": "mouse.jpg"
+}
+
+###
+
+### 7. Obtener todos los Productos
+GET {{Web_HostAddress}}/Products
+Content-Type: application/json
+Accept: application/json
+
+###
+
+### 8. Obtener un Producto por ID
+GET {{Web_HostAddress}}/Products/1
+Content-Type: application/json
+Accept: application/json
+
+###
+
+### 9. Eliminar un Producto por ID
+DELETE {{Web_HostAddress}}/Products/1
+Content-Type: application/json
+Accept: application/json

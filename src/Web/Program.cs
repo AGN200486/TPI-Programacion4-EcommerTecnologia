@@ -30,6 +30,7 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 // Registro de Servicios (Application)
 builder.Services.AddScoped<CategoryService>();
+builder.Services.AddScoped<ProductService>();
 
 // Registro del middleware para el manejo de excepciones
 builder.Services.AddTransient<GlobalExceptionHandlingMiddleware>();
